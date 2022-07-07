@@ -1,20 +1,19 @@
 body{
     height: 100vh;
-    /* v stands for viewpoint and that is the visible part of the webpage,  */
     width: 100vw;
     display: flex;
-    /* the two lines below mean that the items will be in the centre */
     justify-content: center;
     align-items:center ;
     margin: 0; 
-    background-color: black;
+    background-color: royalblue;
 }
 /* this is where I specify the characteristics of my playing field  */
 #gameBoard {
     background-color: #ccc;
-    width: 100vmin;
-    height: 100vmin;
+    width: 75vmin;
+    height: 75vmin;
     display: grid;
+    border: solid black;
     /* below allows my grid to stay 21 grids of equal sizes regardless of what device I am using */
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
