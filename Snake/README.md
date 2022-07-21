@@ -8,6 +8,4 @@ My goal is to create a snake game with a:
  Black board
  Choice of different levels and also
  options on how to play the game
-
-
 ![Screenshot (6)](https://user-images.githubusercontent.com/85358392/177796711-12e861b9-a030-4153-b7f8-0b4190c1e58e.png)
