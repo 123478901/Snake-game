@@ -7,7 +7,7 @@ You grow your snake by eating the food that shows up randomly everytime you eat 
 NB! add comments that show how the documents link and where to get the website and extra details that will be needed
 
 My goal is to create a snake game with a:
- Black board
+Add colour modes.
  Choice of different levels and also
  options on how to play the game
  Add buttons at the left or bottom then have a high score of previous or have a way to save the game and also options

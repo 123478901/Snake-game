@@ -4,8 +4,8 @@ export const SNAKE_SPEED = 10
 const snakeBody = [{x:11, y: 11}]
 let newSegments = 0 
 
-export function update(){
-
+export function updateSnake(){
+    
     function addSegment() 
     {
         for( let i = 0; i< newSegments; i++){
@@ -13,7 +13,7 @@ export function update(){
         }
         newSegments=0
     }
-
+    
     addSegment()
     const inputDirection = getInputDirection()
     for(let i= snakeBody.length-2; i>=0; i--){
@@ -21,9 +21,12 @@ export function update(){
     }
     snakeBody[0].x += inputDirection.x
     snakeBody[0].y += inputDirection.y
- }
- 
- export function draw(gameBoard){
+}
+
+export function expandSnake(amount){
+   newSegments+= amount }
+
+ export function drawSnake(gameBoard){
     snakeBody.forEach( segment=> {
     const snakeElement= document.createElement('div')
     snakeElement.style.gridRowStart = segment.y
@@ -33,10 +36,9 @@ export function update(){
     })
  }
 
- export function expandSnake(amount){
-    newSegments+= amount
- }
 
+
+ 
  export function onSnake(position, {ignoreHead= false}= {}) {
     return snakeBody.some(( segment, index )=> {
         if (ignoreHead && index === 0) return false

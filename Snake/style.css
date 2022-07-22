@@ -5,27 +5,26 @@ body{
     justify-content: center;
     align-items:center ;
     margin: 0; 
-    background-color: royalblue;
+    background-color: rgb(0, 0, 0);
 }
-/* this is where I specify the characteristics of my playing field  */
+
 #gameBoard {
-    background-color: #ccc;
+    background-color: rgb(15, 146, 58);
     width: 75vmin;
     height: 75vmin;
     display: grid;
-    border: solid black;
-    /* below allows my grid to stay 21 grids of equal sizes regardless of what device I am using */
+    border: solid rgb(233, 233, 233);
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
 }
 
-/* My snake and my food attributes are down below */
-.snake{
-    background-color: hsl(1,100%,50%);
-    border: .25vmin solid black;    
-}
 
-.food{
-    background-color: hsl(240,100%,50%);
-    border: .25vmin solid black;
+.snake{
+    background-color: rgb(223, 11, 11);
+    border: .25vmin solid rgb(255, 255, 255);    
 }
+.food{
+    background-color: rgb(21, 7, 143);
+    border: .25vmin solid rgb(255, 255, 255);
+    }
+    
