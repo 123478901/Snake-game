@@ -1,2 +1,2 @@
 # Text Adventure<br>
-Its time to put your typing skills to the test!!! 
+Ready to go on an adventure, come along and lets see where destiny leads you.
